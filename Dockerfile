@@ -15,7 +15,7 @@ RUN yarn && NODE_ENV=production yarn build:www
 CMD ["ls", "-al", "build"]
 
 # ===========================================================
-FROM nginx:alpine
+FROM nginx:1.25.3-alpine3.18
 
 # The following is mainly for doc purpose to show which ENV is supported
 ENV WS_URL=
